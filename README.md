@@ -4,46 +4,46 @@
 
 ## Mini Project
 
-### _**ì„¤ê³„**_
+### _**¼³°è**_
 
 ---
 
-**íŒ€ ì†Œê°œ**
+**ÆÀ ¼Ò°³**
 
 <ol>
-1. (í•™ë²ˆ) ì •ìˆ˜ì•„, 22100015 ê°•ì—°ìž¬<br>
-2. ì—­í• ë¶„ë‹´(2022.05.02 ê¸°ì¤€):
-   í•¨ìˆ˜ë“¤ì„ ë°˜ì”© ë‚˜ëˆ„ì–´ êµ¬í˜„, ê°ìžì˜ êµ¬í˜„ ì½”ë“œ í”¼ë“œë°±<br>
+1. 22000672 Á¤¼ö¾Æ, 22100015 °­¿¬Àç<br>
+2. ¿ªÇÒºÐ´ã(2022.05.02 ±âÁØ):
+   ÇÔ¼öµéÀ» ¹Ý¾¿ ³ª´©¾î ±¸Çö, °¢ÀÚÀÇ ±¸Çö ÄÚµå ÇÇµå¹é<br>
 </ol>
 
-**Mini Project ì£¼ì œ**
+**Mini Project ÁÖÁ¦**
 
-í—¬ìŠ¤ìž¥ íšŒì› ì •ë³´ ê´€ë¦¬ + íšŒì›ë“¤ì˜ ëª¸ ìƒíƒœ ë° ì¶”ì²œ ìš´ë™ ì¶œë ¥ ì‹œìŠ¤í…œ
+Çï½ºÀå È¸¿ø Á¤º¸ °ü¸® + È¸¿øµéÀÇ ¸ö »óÅÂ ¹× ÃßÃµ ¿îµ¿ Ãâ·Â ½Ã½ºÅÛ
 
 ![topic img](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGZpdG5lc3N8ZW58MHx8MHx8&w=1000&q=80)
 
-**Mini Project ì†Œê°œ**
+**Mini Project ¼Ò°³**
 
-**_(íšŒì› ì •ë³´ë¥¼ ì €ìž¥í•˜ê³  ì¶œë ¥í•  ë¿ ì•„ë‹ˆë¼ ì‹ ì²´ ì •ë³´ë¥¼ í•¨ê»˜ ìž…ë ¥ ë°›ì•„ì„œ í‚¤ ëŒ€ë¹„ ëª¸ë¬´ê²Œì— ëŒ€í•œ ë§žì¶¤í˜• ì²´ì¤‘ ê´€ë¦¬ ì‹œìŠ¤í…œì„ ì œê³µí•œë‹¤. ì²´í˜•ì— ë§žëŠ” ì‹ë‹¨ê³¼ ìš´ë™ ì •ë³´ë¥¼ ì œê³µí•˜ì—¬ íšŒì›ë“¤ì˜ ê±´ê°•í•œ ì‹ ì²´ ìœ ì§€ë¥¼ ê°€ìž¥ í° ëª©ì ì— ë‘” ì‹œìŠ¤í…œì´ë‹¤.)_**
+È¸¿ø Á¤º¸¸¦ ÀúÀåÇÏ°í Ãâ·ÂÇÒ »Ó ¾Æ´Ï¶ó ½ÅÃ¼ Á¤º¸¸¦ ÇÔ²² ÀÔ·Â ¹Þ¾Æ¼­ Å° ´ëºñ ¸ö¹«°Ô¿¡ ´ëÇÑ ¸ÂÃãÇü Ã¼Áß °ü¸® ½Ã½ºÅÛÀ» Á¦°øÇÑ´Ù. Ã¼Çü¿¡ ¸Â´Â ½Ä´Ü°ú ¿îµ¿ Á¤º¸¸¦ Á¦°øÇÏ¿© È¸¿øµéÀÇ °Ç°­ÇÑ ½ÅÃ¼ À¯Áö¸¦ °¡Àå Å« ¸ñÀû¿¡ µÐ ½Ã½ºÅÛÀÌ´Ù.
 
 <br>
 
-**ê¸°ëŠ¥(í•¨ìˆ˜ë¡œ êµ¬í˜„)**
+**±â´É(ÇÔ¼ö·Î ±¸Çö)**
 
 <ul>
-- íšŒì› ì •ë³´ CRUD<br>
-- íšŒì› ë°ì´í„° íŒŒì¼ ì €ìž¥<br>
-- íšŒì› ë°ì´í„° íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°<br>
-- ì¶”ì²œ ìš´ë™ ì¶œë ¥<br>
-- ì¶”ì²œ ì‹ë‹¨ ì¶œë ¥<br>
-- ë‚¨ì€ í—¬ìŠ¤ìž¥ ì´ìš© ê¸°ê°„ í™•ì¸<br>
+- È¸¿ø Á¤º¸ CRUD<br>
+- È¸¿ø µ¥ÀÌÅÍ ÆÄÀÏ ÀúÀå<br>
+- È¸¿ø µ¥ÀÌÅÍ ÆÄÀÏ ºÒ·¯¿À±â<br>
+- ÃßÃµ ¿îµ¿ Ãâ·Â<br>
+- ÃßÃµ ½Ä´Ü Ãâ·Â<br>
+- ³²Àº Çï½ºÀå ÀÌ¿ë ±â°£ È®ÀÎ<br>
 </ul>
 <br>
 
-**ê°œë°œí™˜ê²½ ë° ì–¸ì–´**
+**°³¹ßÈ¯°æ ¹× ¾ð¾î**
 
-ê°œë°œí™˜ê²½: VSC
+°³¹ß È¯°æ: VSC
 ![VSC](https://images.velog.io/images/rememberme_jhk/post/38e6ab0a-58a9-4477-bec4-a62ae20dda4a/vscode-logo.png)
 
-ê°œë°œ ì–¸ì–´: C
+°³¹ß ¾ð¾î: C
 ![C](https://images.velog.io/images/asroq1/post/228227c1-8e56-426f-832f-95f2f863b5a7/0Clang.png)
