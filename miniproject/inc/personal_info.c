@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "personal_info.h"
 
+//'3.수정', '4. 삭제' 항목 selectMenu()에 추가해주세요!
 int selectMenu(){
     int menu;
     printf("1. 조회\n");
@@ -20,7 +21,7 @@ void listMembership(Person *p[], int count) {
         if(p[i] == NULL)
             continue;
         printf("%2d", i+1);
-        readFood(*p[i]);
+        readInfo(*p[i]);
     }
     printf("\n");
 }
