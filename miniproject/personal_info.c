@@ -2,16 +2,22 @@
 #include "personal_info.h"
 
 int createInfo(Person *p) {
-    printf("ÀÌ¸§Àº? ");
+    printf("ì´ë¦„ì€? ");
     scanf("%s", p -> name);
 
-    printf("³ªÀÌ´Â? ");
+    printf("ë‚˜ì´ëŠ”? ");
     scanf("%s", &p -> age);
 
-    printf("½ÅÀåÀº? ");
+    printf("ì‹ ìž¥ì€? ");
     scanf("%d", &p -> height);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì›”): ");
+    scanf("%d", &p -> startMonth);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì¼): ");
+    scanf("%d", &p -> startDay);
 }
 
 void readInfo(Person p) {
-    
+
 }
