@@ -7,8 +7,8 @@ typedef struct {
     int InBodyInfo;
 } Person;
 
-int selectMenu();
-void listMembership(Person *p[], int count);
+int selectMenu(); //메뉴선택 함수
+void listMembership(Person *p[], int count); //현재 추가된 항목들 리스트하기
 int createInfo (Person *p);
 void readInfo (Person p);
 int updateInfo (Person *p);
