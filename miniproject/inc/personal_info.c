@@ -14,7 +14,7 @@ int selectMenu(){
 }
 
 void listMembership(Person *p[], int count) {
-    printf("\nNo\tPrice\tStyle\tName");
+    printf("\nNo.\tName\tAge\tHeight\tStarted Month\tStarted Day");
     printf("\n**********************************\n");
     for(int i=0; i<count; i++) {
         if(p[i] == NULL)
