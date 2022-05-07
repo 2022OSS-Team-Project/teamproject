@@ -19,5 +19,5 @@ int createInfo(Person *p) {
 }
 
 void readInfo(Person p) {
-
+    printf("\t%s\t%d\t%d\t%d\t%d\n", p.name, p.age, p.height, p.startMonth, p.startDay);
 }
