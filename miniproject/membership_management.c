@@ -22,6 +22,7 @@ int main() {
             count += createInfo(p[index++]);
         }
     }
+    pritnf("Á¾·áµÊ!\n");
 
     return 0;
 }
