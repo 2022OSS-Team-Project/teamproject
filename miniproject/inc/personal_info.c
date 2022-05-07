@@ -1,6 +1,30 @@
 #include <stdio.h>
 #include "personal_info.h"
 
+int selectMenu(){
+    int menu;
+    printf("1. 조회\n");
+    printf("2. 추가\n");
+    printf("0. 종료\n\n");
+
+    printf("원하는 메뉴는?");
+    scanf("%d", &menu);
+
+    return menu;
+}
+
+void listMembership(Person *p[], int count) {
+    printf("\nNo\tPrice\tStyle\tName");
+    printf("\n**********************************\n");
+    for(int i=0; i<count; i++) {
+        if(p[i] == NULL)
+            continue;
+        printf("%2d", i+1);
+        readFood(*p[i]);
+    }
+    printf("\n");
+}
+
 int createInfo(Person *p) {
     printf("이름은? ");
     scanf("%s", p -> name);
