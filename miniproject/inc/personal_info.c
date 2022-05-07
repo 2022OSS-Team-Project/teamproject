@@ -9,7 +9,7 @@ int selectMenu(){
     printf("2. 추가\n");
     printf("0. 종료\n\n");
 
-    printf("원하는 메뉴는?");
+    printf("원하는 메뉴는?  ");
     scanf("%d", &menu);
 
     return menu;
@@ -32,7 +32,7 @@ int createInfo(Person *p) {
     scanf("%s", p -> name);
 
     printf("나이는? ");
-    scanf("%s", &p -> age);
+    scanf("%d", &p -> age);
 
     printf("신장은? ");
     scanf("%d", &p -> height);
