@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "inc/personal_info.h"
+#include "personal_info.h"
 
 int main() {
     Person *p[20];
