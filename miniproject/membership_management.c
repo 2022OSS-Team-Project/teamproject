@@ -17,7 +17,7 @@ int main() {
                 listMembership(p, index);
             }
             else
-                printf("데이터가 없습니다.");
+                printf("데이터가 없습니다.\n");
         }
         else if(menu == 2) {
             p[index] = (Person *)malloc(sizeof(Person));
