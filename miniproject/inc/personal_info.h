@@ -7,6 +7,7 @@ typedef struct {
     int InBodyInfo;
 } Person;
 
+void selectMenu();
 int createInfo (Person *p);
 void readInfo (Person p);
 int updateInfo (Person *p);
