@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "personal_info.h"
 
-//'3.ìˆ˜ì •', '4. ì‚­ì œ' í•­ëª© selectMenu()ì— ì¶”ê°€í•´ì£¼ì„¸ìš”!
+//'3.¼öÁ¤', '4. »èÁ¦' Ç×¸ñ selectMenu()¿¡ Ãß°¡ÇØÁÖ¼¼¿ä!
 int selectMenu(){
     int menu;
-    printf("1. ì¡°íšŒ\n");
-    printf("2. ì¶”ê°€\n");
-    printf("0. ì¢…ë£Œ\n\n");
+    printf("1. Á¶È¸\n");
+    printf("2. Ãß°¡\n");
+    printf("0. Á¾·á\n\n");
 
-    printf("ì›í•˜ëŠ” ë©”ë‰´ëŠ”?");
+    printf("¿øÇÏ´Â ¸Ş´º´Â?");
     scanf("%d", &menu);
 
     return menu;
@@ -16,7 +17,7 @@ int selectMenu(){
 
 void listMembership(Person *p[], int count) {
     printf("\nNo.\tName\tAge\tHeight\tStarted Month\tStarted Day");
-    printf("\n**********************************\n");
+    printf("\n************************************************************\n");
     for(int i=0; i<count; i++) {
         if(p[i] == NULL)
             continue;
@@ -27,22 +28,22 @@ void listMembership(Person *p[], int count) {
 }
 
 int createInfo(Person *p) {
-    printf("ì´ë¦„ì€? ");
+    printf("ÀÌ¸§Àº? ");
     scanf("%s", p -> name);
 
-    printf("ë‚˜ì´ëŠ”? ");
+    printf("³ªÀÌ´Â? ");
     scanf("%s", &p -> age);
 
-    printf("ì‹ ì¥ì€? ");
+    printf("½ÅÀåÀº? ");
     scanf("%d", &p -> height);
 
-    printf("ë“±ë¡ ë‚ ì§œ(ì›”): ");
+    printf("µî·Ï ³¯Â¥(¿ù): ");
     scanf("%d", &p -> startMonth);
 
-    printf("ë“±ë¡ ë‚ ì§œ(ì¼): ");
+    printf("µî·Ï ³¯Â¥(ÀÏ): ");
     scanf("%d", &p -> startDay);
 }
 
 void readInfo(Person p) {
-    printf("\t%s\t%d\t%d\t%d\t%d\n", p.name, p.age, p.height, p.startMonth, p.startDay);
+    printf("\t%s\t%d\t%d\t%d\t\t%d\n", p.name, p.age, p.height, p.startMonth, p.startDay);
 }
