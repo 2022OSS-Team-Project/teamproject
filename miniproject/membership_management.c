@@ -3,10 +3,11 @@
 
 int main() {
     Person *p[20];
-    int index = 0;
-    int count = 0;
+    int index = 0; //데이터 번호
+    int count = 0; //데이터 개수
     int menu;
 
+    //여기 while문에 menu == 3, menu == 4인 경우 추가해주세요
     while(1) {
         menu = selectMenu();
         if(menu == 0) break;
