@@ -8,7 +8,7 @@ typedef struct {
 } Person;
 
 int createInfo (Person *p);
-void readInfo (Person *p);
+void readInfo (Person p);
 int updateInfo (Person *p);
 int deleteInfo (Person *p);
 int saveInfoFile (Person *p);
