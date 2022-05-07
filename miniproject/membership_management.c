@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "personal_info.h"
+#include <stdlib.h>
+#include "inc/personal_info.h"
 
 int main() {
     Person *p[20];
@@ -23,7 +24,7 @@ int main() {
             count += createInfo(p[index++]);
         }
     }
-    pritnf("Á¾·áµÊ!\n");
+    printf("Á¾·áµÊ!\n");
 
     return 0;
 }
