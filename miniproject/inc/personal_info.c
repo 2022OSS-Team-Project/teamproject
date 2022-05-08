@@ -5,13 +5,13 @@
 //'3.수정', '4. 삭제' 항목 selectMenu()에 추가해주세요!
 int selectMenu(){
     int menu;
-    printf("1. read\n");
-    printf("2. add\n");
-    printf("3. update\n");
-    printf("4. delete\n");
-    printf("0. end\n\n");
+    printf("1. 조회\n");
+    printf("2. 추가\n");
+    printf("3. 수정\n");
+    printf("4. 삭제\n");
+    printf("0. 종료\n\n");
 
-    printf("choice?  ");
+    printf("원하는 메뉴는?  ");
     scanf("%d", &menu);
 
     return menu;
@@ -39,19 +39,19 @@ int selectDataNo(Person *p, int count){
 }
 
 int createInfo(Person *p) {
-    printf("name? ");
+    printf("이름은? ");
     scanf("%s", p -> name);
 
-    printf("age? ");
+    printf("나이는? ");
     scanf("%d", &p -> age);
 
-    printf("height? ");
+    printf("신장은? ");
     scanf("%d", &p -> height);
 
-    printf("month: ");
+    printf("등록 날짜(월): ");
     scanf("%d", &p -> startMonth);
 
-    printf("day: ");
+    printf("등록 날짜(일): ");
     scanf("%d", &p -> startDay);
 
     return 1;
@@ -63,19 +63,19 @@ void readInfo(Person *p) {
 
 int updateInfo(Person *p) {
     printf("\n");
-    printf("name? ");
+    printf("이름은? ");
     scanf("%s",p->name);
 
-    printf("age? ");
+    printf("나이는? ");
     scanf("%d",&p->age);
 
-    printf("height? ");
+    printf("신장은? ");
     scanf("%d",&p->height);
 
-    printf("month ");
+    printf("등록 날짜(월): ");
     scanf("%d",&p->startMonth);
 
-    printf("day ");
+    printf("등록 날짜(일): ");
     scanf("%d",&p->startDay);
 
     printf("==> update!\n");
@@ -85,6 +85,6 @@ int updateInfo(Person *p) {
 int deleteInfo(Person *p){
     p->age=-1;
     p->height=-1;
-    printf("==> delete!\n");
+    printf("=>삭제됨!\n");
     return 0;
 }
