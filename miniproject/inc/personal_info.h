@@ -7,8 +7,8 @@ typedef struct {
     int InBodyInfo;
 } Person;
 
-int selectMenu (); //ë©”ë‰´ì„ íƒ í•¨ìˆ˜
-void listMembership (Person *p, int count); //í˜„ì¬ ì¶”ê°€ëœ í•­ëª©ë“¤ ë¦¬ìŠ¤íŠ¸í•˜ê¸°
+int selectMenu (); //¸Ş´º ¼±ÅÃ ÇÔ¼ö
+void listMembership (Person *p, int count); //ÇöÀç Ãß°¡µÈ Ç×¸ñµé ¸®½ºÆ®ÇÏ±â
 int selectDataNo (Person *p, int count);
 int createInfo (Person *p);
 void readInfo (Person *p);
