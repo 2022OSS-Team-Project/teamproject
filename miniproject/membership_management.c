@@ -4,11 +4,10 @@
 
 int main() {
     Person p[100];
-    int index = 0; //ë°ì´í„° ë²ˆí˜¸
-    int count = 0; //ë°ì´í„° ê°œìˆ˜
+    int index = 0; //µ¥ÀÌÅÍ ¹øÈ£
+    int count = 0; //µ¥ÀÌÅÍ °³¼ö
     int menu;
 
-    //ì—¬ê¸° whileë¬¸ì— menu == 3, menu == 4ì¸ ê²½ìš° ì¶”ê°€í•´ì£¼ì„¸ìš”
     while(1) {
         menu = selectMenu();
         if(menu == 0) break;
@@ -17,7 +16,7 @@ int main() {
                 listMembership(p, index);
             }
             else
-                printf("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.\n");
+                printf("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.\n");
         }
         else if(menu == 2) {
             // p[index] = (Person *)malloc(sizeof(Person));
@@ -27,7 +26,7 @@ int main() {
         else if (menu == 3) {
             int no=selectDataNo(p, index);
             if(no==0){
-                printf("=>ì·¨ì†Œë¨!");
+                printf("=>Ãë¼ÒµÊ!");
                 continue;
             }
             updateInfo(&p[no-1]);
@@ -35,18 +34,18 @@ int main() {
         else if (menu == 4) {
             int no=selectDataNo(p, index);
             if(no==0){
-                printf("=>ì·¨ì†Œë¨!");
+                printf("=>Ãë¼ÒµÊ!");
                 continue;
             }
             int deleteok;
-            printf("ì •ë§ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?(ì‚­ì œ:1)");
+            printf("Á¤¸» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?(»èÁ¦: 1)");
             scanf("%d",&deleteok);
             if(deleteok == 1){
                 if(deleteInfo(&p[no-1])) count --;       
            	 } 
         }
 	}
-    printf("ì¢…ë£Œ!\n");
+    printf("Á¾·áµÊ!\n");
 
     return 0;
 }
