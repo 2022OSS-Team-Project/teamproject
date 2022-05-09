@@ -53,12 +53,12 @@
 헬스장 등록 회원 정보를 Create, Read, Update, Delete하는 4가지의 함수와 메뉴를 출력하고 정보를 수정하고 삭제할 때 해당 번호를 입력하는 함수를 완성하였습니다.
 ![image](https://user-images.githubusercontent.com/103136401/167351564-1bb9a1cb-1868-473f-9cba-5b7edd972dcd.png)
 ![image](https://user-images.githubusercontent.com/103136401/167351572-c675a52b-8bcb-4a62-bbf1-0640e85792e4.png)<br>
-첫번째로 만든 함수는 새로운 정보를 추가하는 함수입니다. 회원 이름과 나이와 신장과 헬스장 등록 날짜를 추가할 수 있습니다.
+첫번째로 만든 함수는 새로운 정보를 추가하는 함수입니다. 회원 이름과 나이와 신장과 헬스장 등록 날짜를 추가할 수 있습니다.<br><br>
 ![image](https://user-images.githubusercontent.com/103136401/167351624-bda1ed75-5f45-453d-b51a-c4bddf93de3e.png)
 ![image](https://user-images.githubusercontent.com/103136401/167351635-75f810a2-420e-449a-a8cb-5aff594beba2.png)<br>
-두번째로 만든 함수는 저장된 정보를 조회할 수 있는 함수입니다. 저장된 회원의 이름, 나이, 신장, 헬스장 등록 날짜를 조회할 수 있습니다.
+두번째로 만든 함수는 저장된 정보를 조회할 수 있는 함수입니다. 저장된 회원의 이름, 나이, 신장, 헬스장 등록 날짜를 조회할 수 있습니다.<br><br>
 ![image](https://user-images.githubusercontent.com/103136401/167351662-1cc9e7c1-09bd-4f4a-a0f4-fe8cc609f49f.png)<br>
 ![](https://user-images.githubusercontent.com/103136401/167352095-58a91cfa-dff5-4599-98a2-24e866c516b7.png)<br>
-세번째로 만든 함수는 회원 정보를 수정하는 함수입니다.
+세번째로 만든 함수는 회원 정보를 수정하는 함수입니다.<br><br>
 ![image](https://user-images.githubusercontent.com/103136401/167351714-603664c7-70c9-4182-bebe-fc497b3d14dd.png)<br>
 네번째로 만든 함수는 회원 정보를 삭제하는 함수입니다.<br>
