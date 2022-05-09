@@ -60,6 +60,6 @@
 ![image](https://user-images.githubusercontent.com/103136401/167351662-1cc9e7c1-09bd-4f4a-a0f4-fe8cc609f49f.png)<br>
 세번째로 만든 함수는 정보를 수정하는 함수입니다. 회원 이름과 나이와 신장과 헬스장 등록 날짜를 수정할 수 있습니다.
 ![image](https://user-images.githubusercontent.com/103136401/167351714-603664c7-70c9-4182-bebe-fc497b3d14dd.png)<br>
-네번째로 만든 함수는 정보를 삭제하는 함수입니다. 회원 이름과 나이와 신장과 헬스장 등록 날짜를 삭제할 수 있습니다.
+네번째로 만든 함수는 정보를 삭제하는 함수입니다. 회원 이름과 나이와 신장과 헬스장 등록 날짜를 삭제할 수 있습니다.<br>
 <img width="464" alt="image" src="https://user-images.githubusercontent.com/103136401/167352095-58a91cfa-dff5-4599-98a2-24e866c516b7.png"><br>
 다섯번째로 만든 함수는 수정하고 삭제할 해당 번호를 입력하는 함수입니다.
