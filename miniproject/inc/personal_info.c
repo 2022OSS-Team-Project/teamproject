@@ -2,16 +2,15 @@
 #include <stdlib.h>
 #include "personal_info.h"
 
-//'3.ÏàòÏ†ï', '4. ÏÇ≠Ï†ú' Ìï≠Î™© selectMenu()Ïóê Ï∂îÍ∞ÄÌï¥Ï£ºÏÑ∏Ïöî!
 int selectMenu(){
     int menu;
-    printf("1. Ï°∞Ìöå\n");
-    printf("2. Ï∂îÍ∞Ä\n");
-    printf("3. ÏàòÏ†ï\n");
-    printf("4. ÏÇ≠Ï†ú\n");
-    printf("0. Ï¢ÖÎ£å\n\n");
+    printf("1. ¡∂»∏\n");
+    printf("2. √ﬂ∞°\n");
+    printf("3. ºˆ¡§\n");
+    printf("4. ªË¡¶\n");
+    printf("0. ¡æ∑·\n\n");
 
-    printf("ÏõêÌïòÎäî Î©îÎâ¥Îäî?  ");
+    printf("ø¯«œ¥¬ ∏ﬁ¥∫¥¬?  ");
     scanf("%d", &menu);
 
     return menu;
@@ -39,19 +38,19 @@ int selectDataNo(Person *p, int count){
 }
 
 int createInfo(Person *p) {
-    printf("Ïù¥Î¶ÑÏùÄ? ");
+    printf("¿Ã∏ß: ");
     scanf("%s", p -> name);
 
-    printf("ÎÇòÏù¥Îäî? ");
+    printf("ø¨∑…: ");
     scanf("%d", &p -> age);
 
-    printf("Ïã†Ïû•ÏùÄ? ");
+    printf("Ω≈¿Â: ");
     scanf("%d", &p -> height);
 
-    printf("Îì±Î°ù ÎÇ†Ïßú(Ïõî): ");
+    printf("µÓ∑œ ≥Ø¬•(ø˘): ");
     scanf("%d", &p -> startMonth);
 
-    printf("Îì±Î°ù ÎÇ†Ïßú(Ïùº): ");
+    printf("µÓ∑œ ≥Ø¬•(¿œ): ");
     scanf("%d", &p -> startDay);
 
     return 1;
@@ -63,19 +62,19 @@ void readInfo(Person *p) {
 
 int updateInfo(Person *p) {
     printf("\n");
-    printf("Ïù¥Î¶ÑÏùÄ? ");
+    printf("¿Ã∏ß: ");
     scanf("%s",p->name);
 
-    printf("ÎÇòÏù¥Îäî? ");
+    printf("ø¨∑…: ");
     scanf("%d",&p->age);
 
-    printf("Ïã†Ïû•ÏùÄ? ");
+    printf("Ω≈¿Â: ");
     scanf("%d",&p->height);
 
-    printf("Îì±Î°ù ÎÇ†Ïßú(Ïõî): ");
+    printf("µÓ∑œ ≥Ø¬•(ø˘): ");
     scanf("%d",&p->startMonth);
 
-    printf("Îì±Î°ù ÎÇ†Ïßú(Ïùº): ");
+    printf("µÓ∑œ ≥Ø¬•(¿œ): ");
     scanf("%d",&p->startDay);
 
     printf("==> update!\n");
@@ -85,6 +84,6 @@ int updateInfo(Person *p) {
 int deleteInfo(Person *p){
     p->age=-1;
     p->height=-1;
-    printf("=>ÏÇ≠Ï†úÎê®!\n");
+    printf("=>ªË¡¶µ !\n");
     return 0;
 }
