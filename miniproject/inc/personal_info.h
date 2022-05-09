@@ -7,10 +7,11 @@ typedef struct {
     int InBodyInfo;
 } Person;
 
-int selectMenu(); //¸Ş´º¼±ÅÃ ÇÔ¼ö
-void listMembership(Person *p[], int count); //ÇöÀç Ãß°¡µÈ Ç×¸ñµé ¸®½ºÆ®ÇÏ±â
+int selectMenu (); //ë©”ë‰´ì„ íƒ í•¨ìˆ˜
+void listMembership (Person *p, int count); //í˜„ì¬ ì¶”ê°€ëœ í•­ëª©ë“¤ ë¦¬ìŠ¤íŠ¸í•˜ê¸°
+int selectDataNo (Person *p, int count);
 int createInfo (Person *p);
-void readInfo (Person p);
+void readInfo (Person *p);
 int updateInfo (Person *p);
 int deleteInfo (Person *p);
 int saveInfoFile (Person *p);

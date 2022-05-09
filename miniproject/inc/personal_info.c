@@ -2,48 +2,89 @@
 #include <stdlib.h>
 #include "personal_info.h"
 
-//'3.¼öÁ¤', '4. »èÁ¦' Ç×¸ñ selectMenu()¿¡ Ãß°¡ÇØÁÖ¼¼¿ä!
+//'3.ìˆ˜ì •', '4. ì‚­ì œ' í•­ëª© selectMenu()ì— ì¶”ê°€í•´ì£¼ì„¸ìš”!
 int selectMenu(){
     int menu;
-    printf("1. Á¶È¸\n");
-    printf("2. Ãß°¡\n");
-    printf("0. Á¾·á\n\n");
+    printf("1. ì¡°íšŒ\n");
+    printf("2. ì¶”ê°€\n");
+    printf("3. ìˆ˜ì •\n");
+    printf("4. ì‚­ì œ\n");
+    printf("0. ì¢…ë£Œ\n\n");
 
-    printf("¿øÇÏ´Â ¸Ş´º´Â?  ");
+    printf("ì›í•˜ëŠ” ë©”ë‰´ëŠ”?  ");
     scanf("%d", &menu);
 
     return menu;
 }
 
-void listMembership(Person *p[], int count) {
+void listMembership(Person *p, int count) {
     printf("\nNo.\tName\tAge\tHeight\tStarted Month\tStarted Day");
     printf("\n************************************************************\n");
     for(int i=0; i<count; i++) {
-        if(p[i] == NULL)
+        if(p[i].age == -1 || p[i].height == -1)
             continue;
-        printf("%2d", i+1);
-        readInfo(*p[i]);
+            printf("%2d", i+1);
+            readInfo(&p[i]);
     }
     printf("\n");
 }
 
-int createInfo(Person *p) {
-    printf("ÀÌ¸§Àº? ");
-    scanf("%s", p -> name);
-
-    printf("³ªÀÌ´Â? ");
-    scanf("%d", &p -> age);
-
-    printf("½ÅÀåÀº? ");
-    scanf("%d", &p -> height);
-
-    printf("µî·Ï ³¯Â¥(¿ù): ");
-    scanf("%d", &p -> startMonth);
-
-    printf("µî·Ï ³¯Â¥(ÀÏ): ");
-    scanf("%d", &p -> startDay);
+int selectDataNo(Person *p, int count){
+    int no;
+    listMembership(p, count);
+    printf("number (cancel:0)?");
+    scanf("%d", &no);
+    getchar();
+    return no;
 }
 
-void readInfo(Person p) {
-    printf("\t%s\t%d\t%d\t%d\t\t%d\n", p.name, p.age, p.height, p.startMonth, p.startDay);
+int createInfo(Person *p) {
+    printf("ì´ë¦„ì€? ");
+    scanf("%s", p -> name);
+
+    printf("ë‚˜ì´ëŠ”? ");
+    scanf("%d", &p -> age);
+
+    printf("ì‹ ì¥ì€? ");
+    scanf("%d", &p -> height);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì›”): ");
+    scanf("%d", &p -> startMonth);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì¼): ");
+    scanf("%d", &p -> startDay);
+
+    return 1;
+}
+
+void readInfo(Person *p) {
+    printf("\t%s\t%d\t%d\t%d\t\t%d\n", p->name, p->age, p->height, p->startMonth, p->startDay);
+}
+
+int updateInfo(Person *p) {
+    printf("\n");
+    printf("ì´ë¦„ì€? ");
+    scanf("%s",p->name);
+
+    printf("ë‚˜ì´ëŠ”? ");
+    scanf("%d",&p->age);
+
+    printf("ì‹ ì¥ì€? ");
+    scanf("%d",&p->height);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì›”): ");
+    scanf("%d",&p->startMonth);
+
+    printf("ë“±ë¡ ë‚ ì§œ(ì¼): ");
+    scanf("%d",&p->startDay);
+
+    printf("==> update!\n");
+    return 1;
+};
+
+int deleteInfo(Person *p){
+    p->age=-1;
+    p->height=-1;
+    printf("=>ì‚­ì œë¨!\n");
+    return 0;
 }

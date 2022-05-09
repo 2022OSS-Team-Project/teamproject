@@ -3,12 +3,12 @@
 #include "inc/personal_info.h"
 
 int main() {
-    Person *p[20];
-    int index = 0; //µ¥ÀÌÅÍ ¹øÈ£
-    int count = 0; //µ¥ÀÌÅÍ °³¼ö
+    Person p[100];
+    int index = 0; //ë°ì´í„° ë²ˆí˜¸
+    int count = 0; //ë°ì´í„° ê°œìˆ˜
     int menu;
 
-    //¿©±â while¹®¿¡ menu == 3, menu == 4ÀÎ °æ¿ì Ãß°¡ÇØÁÖ¼¼¿ä
+    //ì—¬ê¸° whileë¬¸ì— menu == 3, menu == 4ì¸ ê²½ìš° ì¶”ê°€í•´ì£¼ì„¸ìš”
     while(1) {
         menu = selectMenu();
         if(menu == 0) break;
@@ -17,14 +17,36 @@ int main() {
                 listMembership(p, index);
             }
             else
-                printf("µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù.\n");
+                printf("ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤.\n");
         }
         else if(menu == 2) {
-            p[index] = (Person *)malloc(sizeof(Person));
-            count += createInfo(p[index++]);
+            // p[index] = (Person *)malloc(sizeof(Person));
+            // count += createInfo(p[index++]);
+            count += createInfo(&p[index++]);
         }
-    }
-    printf("Á¾·áµÊ!\n");
+        else if (menu == 3) {
+            int no=selectDataNo(p, index);
+            if(no==0){
+                printf("=>ì·¨ì†Œë¨!");
+                continue;
+            }
+            updateInfo(&p[no-1]);
+        }
+        else if (menu == 4) {
+            int no=selectDataNo(p, index);
+            if(no==0){
+                printf("=>ì·¨ì†Œë¨!");
+                continue;
+            }
+            int deleteok;
+            printf("ì •ë§ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?(ì‚­ì œ:1)");
+            scanf("%d",&deleteok);
+            if(deleteok == 1){
+                if(deleteInfo(&p[no-1])) count --;       
+           	 } 
+        }
+	}
+    printf("ì¢…ë£Œ!\n");
 
     return 0;
 }
