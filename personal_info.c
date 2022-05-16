@@ -157,7 +157,7 @@ void saveInfoFile(Person *p, int count){
         if(p[i].age == -1)
             continue;
         fprintf(fp, "%s\t%d\t%d\t\t%d\t\t%d\t\t\t\t%d\t\t\t%d\t\t\t%d\t\t\t%d\n", 
-        p[i].name, p[i].age, p[i].height, p[i].weight, p[i].startMonth, p[i].startDay, p[i].period, p[i].endMonth, p[i].endDay);
+        p[i].name, p[i].age, p[i].height, p[i].weight, p[i].startMonth, p[i].startDay, p[i].period, p[i].endMonth, p[i].BMI);
     }
     fclose(fp);
     printf("Saved!\n");
@@ -198,13 +198,15 @@ int calculateInbody (Person *p) {
 }
 
 void underWeight (Person *p) {
-    printf("UNDERWEIGHT : Your BMI is %d\n", p->BMI);
+    printf("저체중(BMI %d) : 견과류, 통곡물, 유제품 (치즈, 요구르트, 우유)\n", p->BMI);
+    printf("운동 – 체력 키우기 ; 보유한 근육을 유지하기 위한 필라테스와 웨이트, 식단 조절을 통한 증량\n");
 }
 
 void normal (Person *p) {
-    printf("NORMAL : Your BMI is %d\n", p->BMI);
+    printf("축하합니다! 현재 건강한 몸 상태를 유지하기 위해 규칙적인 생활을 지속하세요! (BMI %d)\n", p->BMI);
 }
 
 void overWeight (Person *p) {
-    printf("OVERWEIGHT : Your BMI is %d\n", p->BMI);
+    printf("과체중(BMI %d) : 바나나, 단백질바, 계란\n", p->BMI);
+    printf("운동 – 무릎과 발목을 보호하는 기능적 스트레칭, 체지방 감량을 위한 유산소 운동\n");
 }
