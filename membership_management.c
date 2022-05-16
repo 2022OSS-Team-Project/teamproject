@@ -4,8 +4,8 @@
 
 int main() {
     Person p[100];
-    int index = 0; //데이터 번호
-    int count = 0; //데이터 개수
+    int count = loadInfoFile(p); //데이터 개수
+    int index = count; //데이터 번호
     int menu;
 
     while(1) {
@@ -16,7 +16,7 @@ int main() {
                 listMembership(p, index);
             }
             else
-                printf("no data.\n");
+                printf("No data.\n");
         }
         else if(menu == 2) {
             // p[index] = (Person *)malloc(sizeof(Person));
@@ -26,7 +26,7 @@ int main() {
         else if (menu == 3) {
             int no=selectDataNo(p, index);
             if(no==0){
-                printf("=>cancel!");
+                printf("=>Canceled!");
                 continue;
             }
             updateInfo(&p[no-1]);
@@ -34,18 +34,20 @@ int main() {
         else if (menu == 4) {
             int no=selectDataNo(p, index);
             if(no==0){
-                printf("=>cancel!");
+                printf("=>Canceled!");
                 continue;
             }
             int deleteok;
-            printf("really?(delete: 1)");
+            printf("Really?(delete: 1)");
             scanf("%d",&deleteok);
             if(deleteok == 1){
                 if(deleteInfo(&p[no-1])) count --;       
            	 } 
         }
-        else if (menu == 5) {
-            // selectReadInfo(p, index);
+        else if(menu == 5) {
+            saveInfoFile(p, index);
+        }
+        else if (menu == 6) {
             int no1 = selectDataNo(p, index);
             printf("\n\tName\tAge\tHeight\tweight\tStarted Month\tStarted Day\tEnd Month\tEnd Day\t\tBMI\n");
             printf("\n***************************************************************************************************************\n");
@@ -53,7 +55,7 @@ int main() {
             calculateInbody(&p[no1-1]);
         }
 	}
-    printf("over!\n");
+    printf("Over!\n");
 
     return 0;
 }
