@@ -4,8 +4,10 @@
 
 int main() {
     Person p[100];
-    int count = loadInfoFile(p); //데이터 개수
-    int index = count; //데이터 번호
+    // int count = loadInfoFile(p); //데이터 개수
+    // int index = count; //데이터 번호
+    int count = 0;
+    int index = 0;
     int menu;
 
     while(1) {
